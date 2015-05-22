@@ -24,4 +24,12 @@ choice
 
         comment "AUSBEE Servo Module V0.1 require stm32f10x_StdPeriph_Driver"
                 depends on !STM32F10X_STDPERIPH_DRIVER
+
+	config PLATFORM_BORBOT_INTERFACE_2015
+		bool "Borbot interface board 2015"
+                depends on STM32F4XX_STDPERIPH_DRIVER
+
+        comment "Borbot interface 2015 require stm32f4xx_StdPeriph_Driver"
+               depends on !STM32F4XX_STDPERIPH_DRIVER
+
 endchoice
