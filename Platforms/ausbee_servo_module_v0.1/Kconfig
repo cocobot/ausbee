@@ -1,0 +1,6 @@
+config PLATFORM_AUSBEE_SERVO_MODULE_V0_1
+  bool "AUSBEE Servo Module V0.1"
+  depends on STM32F10X_STDPERIPH_DRIVER
+  
+  comment "AUSBEE Servo Module V0.1 require stm32f10x_StdPeriph_Driver"
+  depends on !STM32F10X_STDPERIPH_DRIVER

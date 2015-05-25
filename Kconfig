@@ -5,6 +5,10 @@ config AUSBEE_DIR
     string
     option env="AUSBEE_DIR"
 
+config OUTPUT_DIR
+    string
+    option env="OUTPUT_PATH"
+
 
 ########################################
 # Build options menu
@@ -202,6 +206,4 @@ endmenu
 
 ########################################
 ## Platforms menu
-menu "Platforms"
 source "$AUSBEE_DIR/Platforms/Kconfig"
-endmenu

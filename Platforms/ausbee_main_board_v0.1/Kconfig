@@ -1,0 +1,6 @@
+config PLATFORM_AUSBEE_MAIN_BOARD_V0_1
+  bool "AUSBEE Main Board V0.1"
+  depends on STM32F4XX_STDPERIPH_DRIVER
+  
+  comment "AUSBEE Main Board V0.1 require stm32f4xx_StdPeriph_Driver"
+  depends on !STM32F4XX_STDPERIPH_DRIVER
